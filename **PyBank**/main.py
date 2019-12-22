@@ -74,6 +74,6 @@ with open(csvpath, newline = '') as csvfile:
         txt.write(f"---------------------------\n")
         txt.write(f"Total Months: {totalMonth}\n")
         txt.write(f"Total: ${netAmount}\n")
-        txt.write(f"Average Change: ${averageChange}\n")
+        txt.write(f"Average Change: ${averageChange: .2f}\n")
         txt.write(f"Greatest Increase in Profits: {gIncMonth} (${max(changes)})\n")
         txt.write(f"Greatest Decrease in Profits: {gDecMonth} (${min(changes)})\n")
